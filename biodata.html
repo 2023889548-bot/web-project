@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Biodata - MuhdAkif</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- FLOATING BACKGROUND -->
+<div class="floating f1" aria-hidden="true"></div>
+<div class="floating f2" aria-hidden="true"></div>
+<div class="floating f3" aria-hidden="true"></div>
+<div class="floating f4" aria-hidden="true"></div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header-row">
+    <div class="brand">MuhdAkif</div>
+    <nav class="navbar" role="navigation">
+      <a href="index.html">Home</a>
+      <a href="biodata.html">Biodata</a>
+      <a href="experience.html">Experience</a>
+      <a href="education.html">Education</a>
+      <a href="family.html">Family</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main class="container" role="main">
+  <section class="card info-grid" aria-labelledby="bio-title">
+    <div class="info-left">
+      <h2 id="bio-title">My Biodata</h2>
+      <p class="muted">This section provides a brief overview of my personal background and interests.</p>
+	  
+	  <!-- Side Card -->
+    <aside class="side-card card">
+      <img src="biodata/me.jpg" alt="Profile photo of MuhdAkif">
+      <p class="center"><strong>Muhammad Akif</strong></p>
+      <p class="muted center">I certify I am responsible for this content.</p>
+      <div style="margin-top:12px; text-align:center;">
+        <a class="btn" href="contact.html">Contact</a>
+      </div>
+    </aside>
+
+      <!-- Personal Details -->
+      <h3>Personal Details</h3>
+      <table class="table">
+        <tr><th>Field</th><th>Information</th></tr>
+        <tr><td>Full name</td><td class="kv">Muhammad Akif bin Mohd Shahrulnizam</td></tr>
+        <tr><td>Date of birth</td><td>28 May 2005</td></tr>
+        <tr><td>Nationality</td><td>Malaysian</td></tr>
+        <tr><td>Address</td><td>Gurun, Kedah</td></tr>
+      </table>
+
+       <!-- Hobbies & Other -->
+      <h3 style="margin-top:18px">🎯 My Hobbies & Interests</h3>
+      <p class="muted" style="margin-bottom:20px">Things I love to do in my free time</p>
+      
+      <div class="hobbies-enhanced-grid">
+        
+        <!-- HOBBY 1: Reading -->
+        <div class="hobby-enhanced-card">
+          <div class="hobby-icon-wrapper">
+            <div class="hobby-icon">📚</div>
+          </div>
+          <div class="hobby-content">
+            <h4>Reading</h4>
+            <p>Technical articles & documentation</p>
+          </div>
+          <div class="hobby-decoration"></div>
+        </div>
+        
+        <!-- HOBBY 2: Web Development -->
+        <div class="hobby-enhanced-card">
+          <div class="hobby-icon-wrapper">
+            <div class="hobby-icon">💻</div>
+          </div>
+          <div class="hobby-content">
+            <h4>Web Projects</h4>
+            <p>Building & coding websites</p>
+          </div>
+          <div class="hobby-decoration"></div>
+        </div>
+        
+        <!-- HOBBY 3: Movies -->
+        <div class="hobby-enhanced-card">
+          <div class="hobby-icon-wrapper">
+            <div class="hobby-icon">🎬</div>
+          </div>
+          <div class="hobby-content">
+            <h4>Movies</h4>
+            <p>Watching films & series</p>
+          </div>
+          <div class="hobby-decoration"></div>
+        </div>
+        
+        <!-- HOBBY 4: Music -->
+        <div class="hobby-enhanced-card">
+          <div class="hobby-icon-wrapper">
+            <div class="hobby-icon">🎵</div>
+          </div>
+          <div class="hobby-content">
+            <h4>Music</h4>
+            <p>Listening to various genres</p>
+          </div>
+          <div class="hobby-decoration"></div>
+        </div>
+        
+        <!-- HOBBY 5: Gaming -->
+        <div class="hobby-enhanced-card">
+          <div class="hobby-icon-wrapper">
+            <div class="hobby-icon">🎮</div>
+          </div>
+          <div class="hobby-content">
+            <h4>Gaming</h4>
+            <p>Playing video games</p>
+          </div>
+          <div class="hobby-decoration"></div>
+        </div>
+        
+        <!-- HOBBY 6: Learning -->
+        <div class="hobby-enhanced-card">
+          <div class="hobby-icon-wrapper">
+            <div class="hobby-icon">🧠</div>
+          </div>
+          <div class="hobby-content">
+            <h4>Learning</h4>
+            <p>Exploring new technologies</p>
+          </div>
+          <div class="hobby-decoration"></div>
+        </div>
+        
+      </div>
+
+    
+  </section>
+
+  <!-- State & Flag Section -->
+  <section class="card">
+    <div class="two-col">
+      <div>
+        <h3>State & Flag</h3>
+        <p class="muted">State: Kedah Darul Aman</p>
+        <p class="muted">Flag & emblem shown on the right.</p>
+      </div>
+      <div class="card side-card">
+        <img src="biodata/KedahFlag.png" alt="State flag" />
+      </div>
+    </div>
+  </section>
+  
+   <!-- MY FAVOURITE MUSIC -->
+  <section class="card music-section">
+    <h3>🎵 My Favourite Music</h3>
+    <p class="muted">Click on any album to play the song. Hover to see play button.</p>
+    
+    <div class="music-grid">
+      
+      <!-- SONG 1 -->
+      <div class="music-card" onclick="playMusic(event,'audio1')">
+        <div class="album-container">
+          <img src="music/Music 1 Growl.jpg" alt="Album Cover" class="album-cover">
+          <div class="play-overlay">
+            <div class="play-button">
+              <div class="play-icon"></div>
+            </div>
+          </div>
+          <div class="equalizer">
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+          </div>
+        </div>
+        <div class="music-info">
+          <h4 class="song-title">으르렁 (Growl)</h4>
+          <p class="artist-name">EXO</p>
+          <span class="song-genre">K-Pop / Dance Pop</span>
+        </div>
+      </div>
+      
+      <!-- SONG 2 -->
+      <div class="music-card" onclick="playMusic(event,'audio2')">
+        <div class="album-container">
+          <img src="music/Music 2 Ne Veryu.jpg" alt="Album Cover" class="album-cover">
+          <div class="play-overlay">
+            <div class="play-button">
+              <div class="play-icon"></div>
+            </div>
+          </div>
+          <div class="equalizer">
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+          </div>
+        </div>
+        <div class="music-info">
+          <h4 class="song-title">Не верю (Ne veryu)</h4>
+          <p class="artist-name">Amirchik</p>
+          <span class="song-genre">Pop / Dance (Russian Pop)</span>
+        </div>
+      </div>
+      
+      <!-- SONG 3 -->
+      <div class="music-card" onclick="playMusic(event,'audio3')">
+        <div class="album-container">
+          <img src="music/Music 3 Aku jatuh.jpeg" alt="Album Cover" class="album-cover">
+          <div class="play-overlay">
+            <div class="play-button">
+              <div class="play-icon"></div>
+            </div>
+          </div>
+          <div class="equalizer">
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+          </div>
+        </div>
+        <div class="music-info">
+          <h4 class="song-title">Aku Jatuh</h4>
+          <p class="artist-name">Fahimi</p>
+          <span class="song-genre">Pop / Pop Malaysia</span>
+        </div>
+      </div>
+      
+      <!-- SONG 4 -->
+      <div class="music-card" onclick="playMusic(event,'audio4')">
+        <div class="album-container">
+          <img src="music/Music 4 Pergilah cinta.jpg" alt="Album Cover" class="album-cover">
+          <div class="play-overlay">
+            <div class="play-button">
+              <div class="play-icon"></div>
+            </div>
+          </div>
+          <div class="equalizer">
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+          </div>
+        </div>
+        <div class="music-info">
+          <h4 class="song-title">Pergilah Cinta</h4>
+          <p class="artist-name">Danial Kifli</p>
+          <span class="song-genre">Pop / Ballad</span>
+        </div>
+      </div>
+      
+      <!-- SONG 5 -->
+      <div class="music-card" onclick="playMusic(event,'audio5')">
+        <div class="album-container">
+          <img src="music/Music 5 Batmana ansak.jpeg" alt="Album Cover" class="album-cover">
+          <div class="play-overlay">
+            <div class="play-button">
+              <div class="play-icon"></div>
+            </div>
+          </div>
+          <div class="equalizer">
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+          </div>
+        </div>
+        <div class="music-info">
+          <h4 class="song-title">بتمنى أنساك (Batmanna Ansak)</h4>
+          <p class="artist-name">Sherine</p>
+          <span class="song-genre">Arabic Pop / Ballad</span>
+        </div>
+      </div>
+	  
+	  <!-- SONG 6 -->
+      <div class="music-card" onclick="playMusic(event,'audio6')">
+        <div class="album-container">
+          <img src="music/Music 6 WILDFLOWER.jpg" alt="Album Cover" class="album-cover">
+          <div class="play-overlay">
+            <div class="play-button">
+              <div class="play-icon"></div>
+            </div>
+          </div>
+          <div class="equalizer">
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+          </div>
+        </div>
+        <div class="music-info">
+          <h4 class="song-title">WILDFLOWER</h4>
+          <p class="artist-name">Billie Eilish</p>
+          <span class="song-genre">Alternative / Indie Pop / Electro-Pop</span>
+        </div>
+      </div>
+	  
+	  <!-- SONG 7 -->
+      <div class="music-card" onclick="playMusic(event,'audio7')">
+        <div class="album-container">
+          <img src="music/Music 7 Fix you.jpeg" alt="Album Cover" class="album-cover">
+          <div class="play-overlay">
+            <div class="play-button">
+              <div class="play-icon"></div>
+            </div>
+          </div>
+          <div class="equalizer">
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+          </div>
+        </div>
+        <div class="music-info">
+          <h4 class="song-title">Fix You</h4>
+          <p class="artist-name">Coldplay</p>
+          <span class="song-genre">Alternative Rock / Soft Rock / Pop Rock</span>
+        </div>
+      </div>
+	  
+	  <!-- SONG 8 -->
+      <div class="music-card" onclick="playMusic(event,'audio8')">
+        <div class="album-container">
+          <img src="music/Music 8 Monster.jpeg" alt="Album Cover" class="album-cover">
+          <div class="play-overlay">
+            <div class="play-button">
+              <div class="play-icon"></div>
+            </div>
+          </div>
+          <div class="equalizer">
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+          </div>
+        </div>
+        <div class="music-info">
+          <h4 class="song-title">Monster</h4>
+          <p class="artist-name">EXO</p>
+          <span class="song-genre">K-Pop / Electropop / Dance-Pop</span>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 by <strong>MuhdAkif</strong>. Ownership & responsibility: All text and images (where not credited) created by owner.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+
+<script>
+// Music Player - Click to Open YouTube
+let currentlyPlaying = null;
+
+function playMusic(event, audioId) {
+  const allCards = document.querySelectorAll('.music-card');
+  const clickedCard = event.currentTarget;
+
+  allCards.forEach(c => c.classList.remove('playing'));
+
+  if (currentlyPlaying === clickedCard) {
+    clickedCard.classList.remove('playing');
+    currentlyPlaying = null;
+    return;
+  }
+
+  clickedCard.classList.add('playing');
+  currentlyPlaying = clickedCard;
+
+  const youtubeLinks = {
+    'audio1': 'https://www.youtube.com/watch?v=I3dezFzsNss',
+    'audio2': 'https://www.youtube.com/watch?v=82Bp3PW-wyo',
+    'audio3': 'https://www.youtube.com/watch?v=M7NrX-g7_l8',
+    'audio4': 'https://www.youtube.com/watch?v=pWzXmmhy4Jc',
+    'audio5': 'https://www.youtube.com/watch?v=IjKWuiFi2W0',
+    'audio6': 'https://www.youtube.com/watch?v=wKBYEhTgoHU',
+    'audio7': 'https://www.youtube.com/watch?v=k4V3Mo61fJM',
+    'audio8': 'https://www.youtube.com/watch?v=KSH-FVVtTf0'
+  };
+
+  window.open(youtubeLinks[audioId], '_blank');
+
+  setTimeout(() => {
+    if (currentlyPlaying === clickedCard) {
+      clickedCard.classList.remove('playing');
+      currentlyPlaying = null;
+    }
+  }, 5000);
+}
+
+
+</script>
+
+</body>
+</html>
